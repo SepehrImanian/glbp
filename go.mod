@@ -1,4 +1,4 @@
-module example.com/glbpd
+module github.com/SepehrImanian/glbp
 
 go 1.22
 

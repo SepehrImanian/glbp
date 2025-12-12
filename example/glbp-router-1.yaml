@@ -1,0 +1,32 @@
+# Interface facing the LAN (where clients send ARP requests)
+interface: eth0
+
+# Virtual IP shared by the GLBP group
+virtual_ip: 10.21.8.10
+
+# GLBP group number (same on all routers)
+group_id: 10
+
+# Gateway priority (higher wins AVG election)
+priority: 150
+
+# Weight for load-balancing decisions
+weight: 100
+
+# Allow preemption if a higher-priority router comes online
+preempt: true
+
+# Hello / hold timers (seconds)
+hello_time_sec: 3
+hold_time_sec: 10
+
+# GLBP multicast settings
+multicast_group: 224.0.0.102
+multicast_port: 3222
+
+# Forwarders (AVFs) owned by THIS router
+# Each forwarder must correspond to a Linux interface
+# that has a virtual MAC and the VIP (/32) configured
+forwarders:
+  - id: 1
+    iface: vmac0

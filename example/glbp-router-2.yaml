@@ -1,0 +1,17 @@
+interface: eth0
+virtual_ip: 10.21.8.10
+group_id: 10
+
+priority: 100
+weight: 100
+preempt: true
+
+hello_time_sec: 3
+hold_time_sec: 10
+
+multicast_group: 224.0.0.102
+multicast_port: 3222
+
+forwarders:
+  - id: 2
+    iface: vmac0
