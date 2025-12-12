@@ -1,0 +1,9 @@
+Disclaimer
+
+This project is an independent, experimental implementation inspired by
+the behavior of Cisco’s Gateway Load Balancing Protocol (GLBP).
+
+It is not affiliated with, endorsed by, or supported by Cisco Systems, Inc.
+Cisco, GLBP, and IOS are trademarks of Cisco Systems, Inc.
+
+This software is provided for educational and research purposes only.
